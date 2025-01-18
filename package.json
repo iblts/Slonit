@@ -12,6 +12,7 @@
 		"sourceMap": true
 	},
 	"scripts": {
-		"start": "npx webpack --config webpack.config.js && node ./dist/bundle.js"
+		"start": "node ./dist/bundle.js",
+		"start:compile": "npx webpack --config webpack.config.js && node ./dist/bundle.js"
 	}
 }
