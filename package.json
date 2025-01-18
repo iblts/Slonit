@@ -1,0 +1,18 @@
+{
+	"dependencies": {
+		"ts-loader": "^9.5.2",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.7.3",
+		"webpack": "^5.97.1",
+		"webpack-cli": "^6.0.1"
+	},
+	"compilerOptions": {
+		"target": "ES5",
+		"module": "CommonJS",
+		"sourceMap": true
+	},
+	"scripts": {
+		"start": "npm compile && node ./dist/bundle.js",
+		"compile": "npx webpack --config webpack.config.js"
+	}
+}
