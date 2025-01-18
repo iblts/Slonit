@@ -1,4 +1,5 @@
 import { myIncludes, myIndexOf, mySlice } from './tasks/array-methods'
+import { getObjectValuesSum, getSortedObjectKeys } from './tasks/objects'
 
 // startGame()
 
@@ -9,3 +10,12 @@ console.log(myIndexOf(arr, 20))
 console.log(myIndexOf(arr, 1, 3))
 console.log(myIncludes(arr, 5))
 console.log(myIncludes(arr, 2, 3))
+
+const object = {
+	name: 'Ivan',
+	age: 18,
+	experience: 1,
+}
+
+console.log(getObjectValuesSum(object))
+console.log(getSortedObjectKeys(object))
