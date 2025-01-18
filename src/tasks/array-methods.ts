@@ -12,9 +12,17 @@ export const mySlice = <T>(arr: T[], start?: number, end = arr.length) => {
 }
 
 export const myIndexOf = <T>(arr: T[], item: T, from = 0) => {
-	return 0
+	for (let i = from; i < arr.length; i++) {
+		if (item === arr[i]) return i
+	}
+
+	return -1
 }
 
 export const myIncludes = <T>(arr: T[], item: T, from = 0) => {
+	for (let i = from; i < arr.length; i++) {
+		if (arr[i] === item) return true
+	}
+
 	return false
 }
