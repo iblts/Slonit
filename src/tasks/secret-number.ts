@@ -22,10 +22,10 @@ export const startGame = () => {
 			break
 		}
 		if (currentNumber > secretNumber) {
-			console.log('Компьютер 1: Меньше.')
+			console.log('Компьютер 1: Меньше.\n')
 			max = currentNumber
 		} else {
-			console.log('Компьютер 1: Больше.')
+			console.log('Компьютер 1: Больше.\n')
 			min = currentNumber
 		}
 	}
