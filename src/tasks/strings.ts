@@ -1,8 +1,6 @@
 export const capitalize = (str: string) => {
-	if (!str) return str
-
 	const trimedString = str.trim()
-
+	if (!trimedString) return str
 	return trimedString[0].toUpperCase() + trimedString.slice(1)
 }
 
