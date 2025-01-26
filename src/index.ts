@@ -1,4 +1,6 @@
 import { myIncludes, myIndexOf, mySlice } from './tasks/array-methods'
+import { calculate, operations } from './tasks/calculator'
+import { myFilter } from './tasks/my-filter'
 import { getObjectValuesSum, getSortedObjectKeys } from './tasks/objects'
 import { startGame } from './tasks/secret-number'
 import { capitalize, isSubstring, trimLine } from './tasks/strings'
@@ -46,3 +48,18 @@ console.log(
 console.log(isSubstring('abc', 'abcde'))
 console.log(isSubstring('abcde', 'cde'))
 console.log(isSubstring('abc', 'bcd'))
+
+/* Задание 13. Функциональные выражения */
+
+const selectedOperation = 'multiply'
+console.log(calculate(6, 3, operations[selectedOperation])) // 18
+
+/* Задание 14. Стрелочные функции и углубление в массивы */
+
+const numbers = [1, 2, 3, 4, 5]
+
+const evenNumbers = myFilter(numbers, num => num % 2 === 0)
+console.log(evenNumbers) // [2, 4]
+
+const greaterThanThree = myFilter(numbers, num => num > 3)
+console.log(greaterThanThree) // [4, 5]
