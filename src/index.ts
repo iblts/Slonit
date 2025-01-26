@@ -1,4 +1,5 @@
 import { myIncludes, myIndexOf, mySlice } from './tasks/array-methods'
+import { calculate, operations } from './tasks/calculator'
 import { getObjectValuesSum, getSortedObjectKeys } from './tasks/objects'
 import { startGame } from './tasks/secret-number'
 import { capitalize, isSubstring, trimLine } from './tasks/strings'
@@ -46,3 +47,8 @@ console.log(
 console.log(isSubstring('abc', 'abcde'))
 console.log(isSubstring('abcde', 'cde'))
 console.log(isSubstring('abc', 'bcd'))
+
+/* Задание 13. Функциональные выражения */
+
+const selectedOperation = 'multiply'
+console.log(calculate(6, 3, operations[selectedOperation])) // 18
