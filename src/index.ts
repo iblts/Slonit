@@ -1,5 +1,6 @@
 import { myIncludes, myIndexOf, mySlice } from './tasks/array-methods'
 import { calculate, operations } from './tasks/calculator'
+import { createLogger, createRandomGenerator } from './tasks/closures'
 import { myFilter } from './tasks/my-filter'
 import { getObjectValuesSum, getSortedObjectKeys } from './tasks/objects'
 import { startGame } from './tasks/secret-number'
@@ -63,3 +64,13 @@ console.log(evenNumbers) // [2, 4]
 
 const greaterThanThree = myFilter(numbers, num => num > 3)
 console.log(greaterThanThree) // [4, 5]
+
+/* Задание 15. Область видимости и замыкания */
+
+const logger = createLogger()
+logger.log('Message 1')
+logger.log('Message 2')
+logger.getLogs()
+
+const random = createRandomGenerator(10, 100)
+for (let i = 0; i < 10; i++) console.log(random())
